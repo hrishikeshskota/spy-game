@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: spy-game
+    runtime: java
+    buildCommand: "./mvnw clean install"
+    startCommand: "java -jar target/spy-game-1.0.jar"
