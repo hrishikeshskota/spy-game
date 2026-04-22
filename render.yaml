@@ -1,5 +1,4 @@
 services:
   - type: web
     name: spy-game
-    buildCommand: "./mvnw clean install -DskipTests"
-    startCommand: "java -jar target/spy-game-1.0.jar"
+    runtime: docker
