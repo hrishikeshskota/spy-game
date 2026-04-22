@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Who's the Spy</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎭 Who's the Spy</h1>
+
+    <!-- Setup -->
+    <div id="setup">
+        <input type="number" id="players" placeholder="Players (3-10)">
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <!-- Game -->
+    <div id="gameArea" class="hidden">
+
+        <h2 id="playerTurn"></h2>
+
+        <div class="card" id="card">
+            <p id="cardText">Tap Reveal</p>
+        </div>
+
+        <button onclick="reveal()">Reveal</button>
+        <button onclick="nextPlayer()">Next</button>
+		<button onclick="restartGame()">Restart Game 🔄</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<footer class="footer">
+    © Developed By Hrishikesh Kota
+</footer>
+</body>
+</html>
